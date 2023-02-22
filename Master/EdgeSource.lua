@@ -35,16 +35,7 @@ spawn(function()
 while wait(0.01) do
 
 if getgenv().Autofarm == true then
-local args = {
-    [1] = "swingKatana"
-}
-
-game:GetService("Players"):WaitForChild("rbx_flidra"):WaitForChild("ninjaEvent"):FireServer(unpack(args))
-local args = {
-    [1] = "swingKatana"
-}
-
-game:GetService("Players"):WaitForChild("rbx_flidra"):WaitForChild("ninjaEvent"):FireServer(unpack(args))
+game.Players.LocalPlayer.ninjaEvent:FireServer("swingKatana")
 
 end
 end
